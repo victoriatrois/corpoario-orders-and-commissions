@@ -1,27 +1,27 @@
-# Pedidos e Encomendas
+# Orders and Commissions
 
-Microsserviço inicial da plataforma de ateliê digital, baseado em Java 25 e Quarkus.
+Initial microservice for the digital atelier platform, built with Java 25 and Quarkus.
 
-## Requisitos
+## Requirements
 
 - JDK 25
-- Maven 3.9 ou superior
-- PostgreSQL disponível durante a execução
+- Maven 3.9 or later
+- PostgreSQL available at runtime
 
-## Executar em modo de desenvolvimento
+## Run in development mode
 
-Defina as variáveis de conexão. Exemplo para uma instância local:
+Set the database connection variables. Example for a local instance:
 
 ```sh
 export DB_USERNAME=postgres
-export QUARKUS_DATASOURCE_PASSWORD='<senha do banco>'
+export QUARKUS_DATASOURCE_PASSWORD='<database password>'
 export DB_JDBC_URL=jdbc:postgresql://localhost:5432/corpoario_orders
 mvn quarkus:dev
 ```
 
-O Quarkus disponibiliza os endpoints de health em `/q/health`, métricas Prometheus
-em `/q/metrics` e a especificação OpenAPI em `/q/openapi`.
+Quarkus provides health endpoints at `/q/health`, Prometheus metrics at `/q/metrics`,
+and the OpenAPI specification at `/q/openapi`.
 
-O projeto contém somente a configuração inicial e as dependências da aplicação.
-Entidades, endpoints, regras de negócio e componentes de mensageria serão
-implementados posteriormente.
+This project contains only the initial configuration and application dependencies.
+Entities, endpoints, business rules, and messaging components will be implemented
+later.
