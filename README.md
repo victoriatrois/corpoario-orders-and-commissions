@@ -10,11 +10,11 @@ Microsserviço inicial da plataforma de ateliê digital, baseado em Java 25 e Qu
 
 ## Executar em modo de desenvolvimento
 
-Configure a conexão com o banco (os valores abaixo são os padrões):
+Defina as variáveis de conexão. Exemplo para uma instância local:
 
 ```sh
 export DB_USERNAME=postgres
-export QUARKUS_DATASOURCE_PASSWORD=postgres
+export QUARKUS_DATASOURCE_PASSWORD='<senha do banco>'
 export DB_JDBC_URL=jdbc:postgresql://localhost:5432/corpoario_orders
 mvn quarkus:dev
 ```
